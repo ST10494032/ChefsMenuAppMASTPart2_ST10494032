@@ -86,7 +86,7 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#0f0f0f',
+    backgroundColor: '#000000ff',
     paddingTop: 48,
   },
   header: {
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
     fontWeight: '800',
   },
   count: {
-    color: '#c0c0c0',
+    color: '#ffffffff',
     marginTop: 6,
   },
   fab: {
@@ -119,14 +119,14 @@ const styles = StyleSheet.create({
   fabText: { fontSize: 32, color: '#111', lineHeight: 32 },
   modalWrap: {
     flex: 1,
-    backgroundColor: '#121212',
+    backgroundColor: '#000000ff',
     padding: 20,
     paddingTop: 60,
   },
   modalTitle: { color: '#d4af37', fontSize: 22, fontWeight: '700', marginBottom: 12 },
   input: {
     backgroundColor: '#1a1a1a',
-    color: '#fff',
+    color: '#ffffffff',
     padding: 12,
     borderRadius: 8,
     marginBottom: 12,
@@ -143,10 +143,10 @@ const styles = StyleSheet.create({
     borderRadius: 8,
   },
   btnSecondary: {
-    backgroundColor: '#6c6c6c',
+    backgroundColor: '#000000ff',
     paddingVertical: 12,
     paddingHorizontal: 18,
     borderRadius: 8,
   },
-  btnText: { color: '#111', fontWeight: '700' },
+  btnText: { color: '#000000ff', fontWeight: '700' },
 });
