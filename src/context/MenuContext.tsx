@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 import { MenuItem, Course } from '../types';
 
-// Utility: generate initial menu items programmatically (not a hard-coded list of specific dishes)
+// Utility: generate initial menu items
 const sampleAdjectives = ['Smoked', 'Herb', 'Spiced', 'Honey', 'Citrus', 'Charred', 'Creamy'];
 const sampleBases = ['Chicken', 'Beetroot', 'Pumpkin', 'Caesar', 'Lentil', 'Salmon', 'Pasta'];
 const sampleDescriptions = [

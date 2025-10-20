@@ -12,8 +12,8 @@ export default function TabNavigator() {
       screenOptions={({ route }) => ({
         headerShown: false,
         tabBarStyle: { backgroundColor: '#2b2b2b' },
-        tabBarActiveTintColor: '#d4af37', // gold
-        tabBarInactiveTintColor: '#c0c0c0', // silver
+        tabBarActiveTintColor: '#d4af37', // Gold
+        tabBarInactiveTintColor: '#c0c0c0', // Silver
         tabBarIcon: ({ focused, color, size }) => {
           let name: any = 'ellipse';
           if (route.name === 'Menu') name = 'fast-food';

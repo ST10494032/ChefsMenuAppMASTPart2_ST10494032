@@ -22,15 +22,15 @@ const styles = StyleSheet.create({
   card: {
     flexDirection: 'row',
     padding: 12,
-    backgroundColor: '#1f1f1f',
+    backgroundColor: '#000000ff',
     borderRadius: 12,
     marginBottom: 10,
     alignItems: 'center',
-    borderColor: '#d4af37',
+    borderColor: '#ffffffff',
     borderWidth: 1,
   },
   name: {
-    color: '#fff',
+    color: '#ffffffff',
     fontSize: 16,
     fontWeight: '700',
   },
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     marginBottom: 4,
   },
   desc: {
-    color: '#cfcfcf',
+    color: '#ffffffff',
   },
   deleteBtn: {
     backgroundColor: '#a0a0a0',
