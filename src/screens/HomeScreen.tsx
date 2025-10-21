@@ -34,7 +34,7 @@ export default function HomeScreen() {
     <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.title}>Christoffel's Menu</Text>
-        <Text style={styles.count}>{menu.length} items available</Text>
+        <Text style={styles.count}>{menu.length} Items Available</Text>
       </View>
 
       <FlatList
