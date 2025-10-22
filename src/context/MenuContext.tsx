@@ -8,7 +8,7 @@ const sampleDescriptions = [
   'A carefully prepared dish using seasonal ingredients.',
   'Chef special with a modern twist.',
   'Comfort-style flavours balanced with bright notes.',
-  'Light and fresh — great for a starter or side.'
+  'Light and fresh, great for a starter or side.'
 ];
 
 function randomFrom<T>(arr: T[]) { return arr[Math.floor(Math.random() * arr.length)]; }
