@@ -125,14 +125,14 @@ const styles = StyleSheet.create({
   },
   modalTitle: { color: '#d4af37', fontSize: 22, fontWeight: '700', marginBottom: 12 },
   input: {
-    backgroundColor: '#1a1a1a',
+    backgroundColor: '#000000ff',
     color: '#ffffffff',
     padding: 12,
     borderRadius: 8,
     marginBottom: 12,
   },
   pickerWrap: {
-    backgroundColor: '#1a1a1a',
+    backgroundColor: '#ffffffff',
     borderRadius: 8,
     marginBottom: 12,
   },
@@ -143,7 +143,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
   },
   btnSecondary: {
-    backgroundColor: '#000000ff',
+    backgroundColor: '#ffffffff',
     paddingVertical: 12,
     paddingHorizontal: 18,
     borderRadius: 8,
