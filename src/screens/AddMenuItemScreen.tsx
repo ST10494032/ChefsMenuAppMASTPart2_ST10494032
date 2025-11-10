@@ -18,6 +18,7 @@ export default function AddMenuItemScreen() {
       name,
       course,
       price: parseFloat(price),
+      description: ''
     };
     addMenuItem(newItem);
     setName('');
