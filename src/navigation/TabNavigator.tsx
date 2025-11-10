@@ -1,7 +1,8 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from '../screens/HomeScreen';
-import SettingsScreen from '../screens/SettingsScreen';
+import AddMenuItemScreen from '../screens/AddMenuItemScreen';
+import FilterScreen from '../screens/FilterScreen';
 import { Ionicons } from '@expo/vector-icons';
 
 const Tab = createBottomTabNavigator();
@@ -11,19 +12,21 @@ export default function TabNavigator() {
     <Tab.Navigator
       screenOptions={({ route }) => ({
         headerShown: false,
-        tabBarStyle: { backgroundColor: '#2b2b2b' },
-        tabBarActiveTintColor: '#d4af37', // Gold
-        tabBarInactiveTintColor: '#c0c0c0', // Silver
-        tabBarIcon: ({ focused, color, size }) => {
-          let name: any = 'ellipse';
-          if (route.name === 'Menu') name = 'fast-food';
-          if (route.name === 'Settings') name = 'settings';
-          return <Ionicons name={name} size={size} color={color} />;
+        tabBarActiveTintColor: '#FFD700',
+        tabBarInactiveTintColor: '#C0C0C0',
+        tabBarStyle: { backgroundColor: '#2E2E2E' },
+        tabBarIcon: ({ color, size }) => {
+          let iconName: keyof typeof Ionicons.glyphMap = 'home';
+          if (route.name === 'Home') iconName = 'home';
+          else if (route.name === 'Add Item') iconName = 'add-circle';
+          else if (route.name === 'Filter') iconName = 'filter';
+          return <Ionicons name={iconName} size={size} color={color} />;
         },
       })}
     >
-      <Tab.Screen name="Menu" component={HomeScreen} />
-      <Tab.Screen name="Settings" component={SettingsScreen} />
+      <Tab.Screen name="Home" component={HomeScreen} />
+      <Tab.Screen name="Add Item" component={AddMenuItemScreen} />
+      <Tab.Screen name="Filter" component={FilterScreen} />
     </Tab.Navigator>
   );
 }
