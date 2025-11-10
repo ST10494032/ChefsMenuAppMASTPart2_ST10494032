@@ -8,15 +8,14 @@ import { Ionicons } from '@expo/vector-icons';
 export default function AddMenuItemScreen() {
   const { menuItems, addMenuItem, removeMenuItem } = useMenu();
   const [name, setName] = useState('');
-  const [description, setDescription] = useState('');
   const [course, setCourse] = useState<Course>('Starters');
   const [price, setPrice] = useState('');
 
   const handleAdd = () => {
+    if (!name || !price) return;
     const newItem: MenuItem = {
       id: Date.now().toString(),
       name,
-      description,
       course,
       price: parseFloat(price),
     };
@@ -27,19 +26,14 @@ export default function AddMenuItemScreen() {
 
   return (
     <View style={styles.container}>
+      <Text style={styles.title}>Add Menu Item</Text>
+
       <TextInput
         placeholder="Item name"
         placeholderTextColor="#C0C0C0"
         style={styles.input}
         value={name}
         onChangeText={setName}
-      />
-      <TextInput
-        placeholder="Description"
-        placeholderTextColor="#C0C0C0"
-        style={styles.input}
-        value={description}
-        onChangeText={setDescription}
       />
       <TextInput
         placeholder="Price (R)"
