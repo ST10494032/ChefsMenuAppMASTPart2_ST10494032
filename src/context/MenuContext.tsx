@@ -1,68 +1,30 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
-import { MenuItem, Course } from '../types';
+import { MenuItem } from '../types';
 
-// Utility: Generate initial menu items
-const sampleAdjectives = ['Smoked', 'Herb', 'Spiced', 'Honey', 'Citrus', 'Charred', 'Creamy'];
-const sampleBases = ['Chicken', 'Beetroot', 'Pumpkin', 'Caesar', 'Lentil', 'Salmon', 'Pasta'];
-const sampleDescriptions = [
-  'A carefully prepared dish using seasonal ingredients.',
-  'Chef special with a modern twist.',
-  'Comfort-style flavours balanced with bright notes.',
-  'Light and fresh, great for a starter or side.'
-];
-
-function randomFrom<T>(arr: T[]) { return arr[Math.floor(Math.random() * arr.length)]; }
-
-function randomCourse(): Course {
-  const courses: Course[] = ['Starters', 'Mains', 'Desserts', 'Drinks'];
-  return courses[Math.floor(Math.random() * courses.length)];
+interface MenuContextType {
+  menuItems: MenuItem[];
+  addMenuItem: (item: MenuItem) => void;
+  removeMenuItem: (id: string) => void;
 }
-
-function generateSampleMenu(count = 4): MenuItem[] {
-  const items: MenuItem[] = [];
-  for (let i = 0; i < count; i++) {
-    const name = `${randomFrom(sampleAdjectives)} ${randomFrom(sampleBases)}`;
-    const price = Math.round((Math.random() * 120 + 50) * 100) / 100; // between 50 and 170
-    items.push({
-      id: `${Date.now()}-${i}`,
-      name,
-      description: randomFrom(sampleDescriptions),
-      course: randomCourse(),
-      price,
-    });
-  }
-  return items;
-}
-
-type MenuContextType = {
-  menu: MenuItem[];
-  addItem: (item: Omit<MenuItem, 'id'>) => void;
-  removeItem: (id: string) => void;
-};
 
 const MenuContext = createContext<MenuContextType | undefined>(undefined);
 
 export const MenuProvider = ({ children }: { children: ReactNode }) => {
-  const [menu, setMenu] = useState<MenuItem[]>(() => generateSampleMenu(6));
+  const [menuItems, setMenuItems] = useState<MenuItem[]>([]);
 
-  function addItem(item: Omit<MenuItem, 'id'>) {
-    const newItem: MenuItem = { ...item, id: `${Date.now()}-${Math.random()}` };
-    setMenu(prev => [newItem, ...prev]);
-  }
-
-  function removeItem(id: string) {
-    setMenu(prev => prev.filter(i => i.id !== id));
-  }
+  const addMenuItem = (item: MenuItem) => setMenuItems((prev) => [...prev, item]);
+  const removeMenuItem = (id: string) =>
+    setMenuItems((prev) => prev.filter((item) => item.id !== id));
 
   return (
-    <MenuContext.Provider value={{ menu, addItem, removeItem }}>
+    <MenuContext.Provider value={{ menuItems, addMenuItem, removeMenuItem }}>
       {children}
     </MenuContext.Provider>
   );
 };
 
-export const useMenu = () => {
-  const ctx = useContext(MenuContext);
-  if (!ctx) throw new Error('useMenu must be used inside MenuProvider');
-  return ctx;
+export const useMenu = (): MenuContextType => {
+  const context = useContext(MenuContext);
+  if (!context) throw new Error('useMenu must be used within MenuProvider');
+  return context;
 };
