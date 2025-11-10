@@ -30,9 +30,5 @@ https://youtu.be/LllJf5vfwAg?si=O_NEzlgwJHnP9Fdj
 
 https://github.com/ST10494032/ChefsMenuAppMASTPart2_ST10494032 
 ## Screenshots
-![WhatsApp Image 2025-10-22 at 17 42 50_27b7e2cb](https://github.com/user-attachments/assets/63cdcfef-3b42-4a26-b099-cbe278ad882b)
-![WhatsApp Image 2025-10-22 at 17 42 50_5141c7c8](https://github.com/user-attachments/assets/594806bc-e163-4155-85c3-3d945bf89d1d)
-![WhatsApp Image 2025-10-22 at 17 42 50_ff7a46e5](https://github.com/user-attachments/assets/a719e8a7-0409-4a1b-99d7-b1f39bf4cc6a)
-![WhatsApp Image 2025-10-22 at 17 42 49_703d10ba](https://github.com/user-attachments/assets/bdcc15d3-cc17-4de8-8e6a-59a656543171)
-![WhatsApp Image 2025-10-22 at 17 42 49_b2dd73d1](https://github.com/user-attachments/assets/a935daf3-1278-46d5-b45d-9fabcd6fe3b9)
-![WhatsApp Image 2025-10-22 at 17 42 50_bf849d0a](https://github.com/user-attachments/assets/c92e3f02-2511-4b7a-a526-7c6d8d664aed)
+
+
