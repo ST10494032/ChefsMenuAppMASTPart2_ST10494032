@@ -9,11 +9,10 @@ Make sure you have expo go on your phone to scan the QR code to run the app or o
 ### Main Features
 - Displays all existing menu items using a FlatList.
 - Lets the chef add new dishes through a modal form.
-- Includes input validation to prevent incorrect data.
-- Uses a floating “+” button for quick access.
 - Connects to a global context so all menu data is shared across the app.
 - Can switch between screen easily
 - Shows number of item selected
+- Shows Average Price per course
 - Able to add new dishes easily
 - Gives option to take away menu items
 - User friendly
@@ -24,11 +23,17 @@ i Phone is also compatible. However the app was only testing on andriod phones
 ## Links
 ### YouTube Link
 
-https://youtu.be/LllJf5vfwAg?si=O_NEzlgwJHnP9Fdj
+https://youtu.be/HOLaowGfIEE?si=uwACkEtSfDpeFjx6 
 
 ### GitHub Repository
 
-https://github.com/ST10494032/ChefsMenuAppMASTPart2_ST10494032 
+https://github.com/VCCT-MAST5112-2025-G1/ChefsMenuAppMASTPart2_ST10494032.git
+
 ## Screenshots
 
+![alt text](<WhatsApp Image 2025-11-10 at 2.09.50 PM.jpeg>)
+
+![alt text](<WhatsApp Image 2025-11-10 at 2.09.50 PM (1).jpeg>)
+
+![alt text](<WhatsApp Image 2025-11-10 at 2.09.51 PM.jpeg>)
 
