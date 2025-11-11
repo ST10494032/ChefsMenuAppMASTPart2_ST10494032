@@ -37,3 +37,8 @@ https://github.com/VCCT-MAST5112-2025-G1/ChefsMenuAppMASTPart2_ST10494032.git
 
 ![alt text](<WhatsApp Image 2025-11-10 at 2.09.51 PM.jpeg>)
 
+## Changes made
+
+I changed the Color them I went with a gold and black theme in part 2. i decided to changed that and go for a gold and silverish theme
+Also i got feed back that i shouldnt hard code so i took that out and made it a blank menu until the chef enters the menu items.
+As well as i moved the add menu to its own screen instead of a flouting icon. So teh navigation will be easier. it all stated that it should have its own screen so i moved it to its own.
