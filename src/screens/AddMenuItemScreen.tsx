@@ -27,7 +27,7 @@ export default function AddMenuItemScreen() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Add Menu Item</Text>
+      <Text style={styles.title}>Add or Remove a Menu Item</Text>
 
       <TextInput
         placeholder="Item name"

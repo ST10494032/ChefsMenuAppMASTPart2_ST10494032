@@ -12,7 +12,7 @@ export default function FilterScreen() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Filter Menu by Course</Text>
+      <Text style={styles.title}>Filter Menu Items by Course</Text>
       <Picker selectedValue={selectedCourse} onValueChange={(v) => setSelectedCourse(v as Course)} style={styles.picker}>
         <Picker.Item label="Starters" value="Starters" />
         <Picker.Item label="Mains" value="Mains" />

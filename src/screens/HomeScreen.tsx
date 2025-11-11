@@ -16,7 +16,7 @@ export default function HomeScreen() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Average Prices by Course</Text>
+      <Text style={styles.title}>Welcome to Christoffels Resturant</Text>
       {courses.map((course) => (
         <View key={course} style={styles.card}>
           <Text style={styles.course}>{course}</Text>
